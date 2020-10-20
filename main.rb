@@ -1,14 +1,9 @@
 def substrings(phrase,dictionary)
-  result = {}
+  result = Hash.new(0)
   phrase.split(" ").to_a.each do |word|
     dictionary.each do |dic_word|
-      if word.downcase[dic_word.downcase]
-        if result.has_key?(dic_word)
-          result[dic_word] += 1
-        else
-          result[dic_word] = 1
-        end
-      end
+      #alternatively can use include?   
+      result[dic_word] += 1 if word.downcase[dic_word.downcase]
     end
   end  
   return result
