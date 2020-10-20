@@ -1,2 +1,2 @@
 # project-sub-strings
-PROJECT: SUB STRINGS - The Odin Project
+Project: Sub Strings - The Odin Project
